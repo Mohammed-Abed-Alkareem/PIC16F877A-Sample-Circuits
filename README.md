@@ -5,13 +5,11 @@ Welcome to the **PIC16F877A Sample Circuits Repository**! This repository provid
 ---
 
 ## Table of Contents
-1. [Introduction to PIC16F877A](#introduction-to-pic16f877a)
-2. [Repository Structure](#repository-structure)
-3. [Getting Started](#getting-started)
-4. [Circuit Examples](#circuit-examples)
-5. [Software and Tools](#software-and-tools)
-6. [Contributing](#contributing)
-7. [License](#license)
+* [Base Circuit: Connecting the Oscillator](#base-circuit-connecting-the-oscillator)
+  > This example demonstrates how to connect an oscillator to the PIC16F877A microcontroller, ensuring stable clock operation for your projects.
+
+* [7-Segment Display: Counting from 0 to 9](#7-segment-display-counting-from-0-to-9)
+  > This example demonstrates interfacing a 7-segment display with the PIC16F877A microcontroller. The program loops through numbers 0 to 9 with approximately a 1-second delay between each count.
 
 ---
 
@@ -67,22 +65,42 @@ Before you begin, ensure you have the following:
 
 ---
 
-## Circuit Examples
 
-### Base Circuit: Connecting the Oscillator
+## Base Circuit: Connecting the Oscillator
+
+- **Description**: This example demonstrates how to connect an external oscillator to the PIC16F877A microcontroller. The oscillator provides a stable clock signal to the microcontroller, ensuring accurate timing for your projects.
+
+- **Components**:
+  - PIC16F877A Microcontroller
+  - Oscillator (e.g., 4MHz)
+  - Capacitors (22pF)
+  - Power Supply (5V)
+  - Breadboard and Connecting Wires
+
+- **Circuit Diagram**:
+
 <div align="center">
     <img src="base/assets/circuit.jpg" alt="Base Circuit" width="500" />
 </div>
 
-- **Description**: This example demonstrates how to connect an oscillator to the PIC16F877A microcontroller, ensuring stable clock operation for your projects.
+
 - **Files**:
   - [Proteus File](base/protus_file)
+  > The Proteus file contains the PIC16F877A microcontroller with an external oscillator connected to it. The oscillator provides a stable clock signal to the microcontroller.
 
 ---
 
-### 7-Segment Display: Counting from 0 to 9
+## 7-Segment Display: Counting from 0 to 9
 - **Description**: This example demonstrates interfacing a 7-segment display with the PIC16F877A microcontroller. The program loops through numbers 0 to 9 with approximately a 1-second delay between each count.
 
+- **Components**:
+  - PIC16F877A Microcontroller
+  - 7-Segment Display
+  - Resistors (220 Ohms)
+  - Power Supply (5V)
+  - Breadboard and Connecting Wires
+
+- **Circuit Diagram**:
 
 <div align="center">
     <img src="7-segment/assets/circuit.jpg" alt="7-Segment Circuit" width="500" />
@@ -90,9 +108,16 @@ Before you begin, ensure you have the following:
 
 - **Files**:
   - [Proteus File](7-segment/protues_file)
-  - [Assembly File](7-segment/asm_file)
-  - [HEX File](7-segment/hex_file)
+  > The Proteus file contains the PIC16F877A microcontroller interfaced with a 7-segment display. The program counts from 0 to 9 with a 1-second delay between each count.
 
+  - [Assembly File](7-segment/asm_file)
+  > The assembly file contains the code to display numbers 0 to 9 on the 7-segment display.
+
+
+  - [HEX File](7-segment/hex_file)
+  > The HEX file is generated from the assembly code and can be loaded into the microcontroller for execution.
+
+- **Demo**:
 
 <div align="center">
     <img src="7-segment/assets/playback.gif" alt="7-Segment Circuit" width="500" />
@@ -100,7 +125,10 @@ Before you begin, ensure you have the following:
 
 
 
-- **Usage**: Load the HEX file into the microcontroller using Proteus or your PIC Programmer, and observe the counting sequence on the 7-segment display.
+- **Usage**: 
+  1. Open the Proteus file in Proteus software.
+  2. Load the HEX file into the PIC16F877A microcontroller.
+  3. Run the simulation to see the 7-segment display counting from 0 to 9.
 
 ---
 
