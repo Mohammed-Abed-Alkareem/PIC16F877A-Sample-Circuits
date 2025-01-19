@@ -8,6 +8,9 @@ Welcome to the **PIC16F877A Sample Circuits Repository**! This repository provid
 * [Base Circuit: Connecting the Oscillator](#base-circuit-connecting-the-oscillator)
   > This example demonstrates how to connect an oscillator to the PIC16F877A microcontroller, ensuring stable clock operation for your projects.
 
+* [3-Leds Blinking: Blinking 3 LEDs](#3-leds-blinking-blinking-3-leds)
+  > This example demonstrates how to blink 3 LEDs using the PIC16F877A microcontroller. The program turns on and off the LEDs in a sequence with a delay of 2 seconds between each transition.
+
 * [7-Segment Display: Counting from 0 to 9](#7-segment-display-counting-from-0-to-9)
   > This example demonstrates interfacing a 7-segment display with the PIC16F877A microcontroller. The program loops through numbers 0 to 9 with approximately a 1-second delay between each count.
 
@@ -85,8 +88,47 @@ Before you begin, ensure you have the following:
 
 
 - **Files**:
-  - [Proteus File](base/protus_file)
+  - [Proteus File](base/base.pdsprj)
   > The Proteus file contains the PIC16F877A microcontroller with an external oscillator connected to it. The oscillator provides a stable clock signal to the microcontroller.
+
+---
+
+## 3-Leds Blinking: Blinking 3 LEDs
+- **Description**: This example demonstrates how to blink 3 LEDs using the PIC16F877A microcontroller. The program turns on and off the LEDs in a sequence with a delay 2sec between each transition.
+
+- **Components**:
+  - PIC16F877A Microcontroller
+  - 3 LEDs (Red, Yello, Green)
+  - Resistors (220 Ohms)
+  - Power Supply (5V)
+  - Breadboard and Connecting Wires
+
+- **Circuit Diagram**:
+
+<div align="center">
+    <img src="led/assets/circuit.jpg" alt="3-Leds Circuit" width="500" />
+</div>
+
+- **Files**:
+  - [Proteus File](led/led.pdsprj)
+  > The Proteus file contains the PIC16F877A microcontroller interfaced with 3 LEDs. The program blinks the LEDs in a sequence with a 2-second delay between each transition.
+
+  - [Assembly File](led/led.asm)
+  > The assembly file contains the code to blink 3 LEDs in a sequence.
+
+  - [HEX File](led/led.hex)
+  > The HEX file is generated from the assembly code and can be loaded into the microcontroller for execution.
+
+- **Demo**:
+
+<div align="center">
+    <img src="led/assets/playback.gif" alt="3-Leds Circuit" width="500" />
+</div>
+
+- **Usage**: 
+  1. Open the Proteus file in Proteus software.
+  2. Load the HEX file into the PIC16F877A microcontroller.
+  3. Run the simulation to see the 3 LEDs blinking in a sequence.
 
 ---
 
@@ -107,14 +149,14 @@ Before you begin, ensure you have the following:
 </div>
 
 - **Files**:
-  - [Proteus File](7-segment/protues_file)
+  - [Proteus File](7-segment/7_segment.pdsprj)
   > The Proteus file contains the PIC16F877A microcontroller interfaced with a 7-segment display. The program counts from 0 to 9 with a 1-second delay between each count.
 
-  - [Assembly File](7-segment/asm_file)
+  - [Assembly File](7-segment/7_segment.asm)
   > The assembly file contains the code to display numbers 0 to 9 on the 7-segment display.
 
 
-  - [HEX File](7-segment/hex_file)
+  - [HEX File](7-segment/7_segment.hex)
   > The HEX file is generated from the assembly code and can be loaded into the microcontroller for execution.
 
 - **Demo**:
