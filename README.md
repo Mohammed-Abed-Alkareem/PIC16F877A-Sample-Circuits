@@ -70,8 +70,9 @@ Before you begin, ensure you have the following:
 ## Circuit Examples
 
 ### Base Circuit: Connecting the Oscillator
-
-![Oscillator Circuit](base/assets/circuit.jpg)
+<div align="center">
+    <img src="base/assets/circuit.jpg" alt="Base Circuit" width="500" />
+</div>
 
 - **Description**: This example demonstrates how to connect an oscillator to the PIC16F877A microcontroller, ensuring stable clock operation for your projects.
 - **Files**:
@@ -82,14 +83,20 @@ Before you begin, ensure you have the following:
 ### 7-Segment Display: Counting from 0 to 9
 - **Description**: This example demonstrates interfacing a 7-segment display with the PIC16F877A microcontroller. The program loops through numbers 0 to 9 with approximately a 1-second delay between each count.
 
-![7-Segment Circuit](7-segment/assets/circuit.jpg)
+
+<div align="center">
+    <img src="7-segment/assets/circuit.jpg" alt="7-Segment Circuit" width="500" />
+</div>
 
 - **Files**:
   - [Proteus File](7-segment/protues_file)
   - [Assembly File](7-segment/asm_file)
   - [HEX File](7-segment/hex_file)
 
-![Demo GIF](7-segment/assets/playback.gif)
+
+<div align="center">
+    <img src="7-segment/assets/playback.gif" alt="7-Segment Circuit" width="500" />
+</div>
 
 
 
