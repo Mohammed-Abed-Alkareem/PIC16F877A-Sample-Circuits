@@ -1,6 +1,6 @@
 # PIC16F877A Sample Circuits Repository
 
-Welcome to the **PIC16F877A Sample Circuits Repository**! This repository provides a collection of sample circuits and example codes to help developers and enthusiasts get started with the **PIC16F877A microcontroller**. Whether you are a beginner exploring microcontroller programming or an advanced user working on embedded system projects, this repository aims to be a valuable resource for you.
+Welcome to the **PIC16F877A Sample Circuits Repository**! This repository provides a collection of sample circuits and example codes written in **Assembly** to help developers and enthusiasts get started with the **PIC16F877A microcontroller**. if you are a beginner exploring microcontroller programming, this repository aims to be a valuable resource for you.
 
 ---
 
@@ -192,7 +192,7 @@ Before you begin, ensure you have the following:
 
 - **Circuit Diagram**:
 <div align="center">
-    <img src="ADC_LCD\assets\circuit.jpg" alt="ADC-LCD Circuit" width="500" />
+    <img src="ADC_LCD/assets/circuit.jpg" alt="ADC-LCD Circuit" width="500" />
 </div>
 
 - **Files**:
@@ -211,7 +211,7 @@ Before you begin, ensure you have the following:
 
 - **Demo**:
 <div align="center">
-    <img src="ADC_LCD\assets\ADC_LCD_demo.jpg" alt="ADC-LCD Circuit" width="500" />
+    <img src="ADC_LCD/assets/ADC_LCD_demo.jpg" alt="ADC-LCD Circuit" width="500" />
 </div>
 
 
