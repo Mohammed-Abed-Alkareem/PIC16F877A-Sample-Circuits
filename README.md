@@ -14,6 +14,11 @@ Welcome to the **PIC16F877A Sample Circuits Repository**! This repository provid
 * [7-Segment Display: Counting from 0 to 9](#7-segment-display-counting-from-0-to-9)
   > This example demonstrates interfacing a 7-segment display with the PIC16F877A microcontroller. The program loops through numbers 0 to 9 with approximately a 1-second delay between each count.
 
+* [ADC - LCD: Displaying Analog Voltage on LCD](#adc---lcd-displaying-analog-voltage-on-lcd)
+  > This example demonstrates how to display an analog voltage on an LCD using the PIC16F877A microcontroller. The program reads an analog voltage from the ADC and displays it on the LCD in real-time.
+
+
+
 ---
 
 ## Introduction to PIC16F877A
@@ -174,8 +179,48 @@ Before you begin, ensure you have the following:
 
 ---
 
+## ADC - LCD: Displaying Analog Voltage on LCD
+- **Description**: This example demonstrates how to display an analog voltage on an LCD using the PIC16F877A microcontroller. The program reads an analog voltage from the ADC and displays it on the LCD in real-time.
+
+- **Components**:
+  - PIC16F877A Microcontroller
+  - LCD (16x2)
+  - Potentiometer
+  - Resistors 
+  - Power Supply (5V)
+  - Breadboard and Connecting Wires
+
+- **Circuit Diagram**:
+<div align="center">
+    <img src="ADC_LCD\assets\circuit.jpg" alt="ADC-LCD Circuit" width="500" />
+</div>
+
+- **Files**:
+  - [Proteus File](ADC-LCD/ADC-LCD.pdsprj)
+  > The Proteus file contains the PIC16F877A microcontroller interfaced with an LCD and a potentiometer. The program reads an analog voltage from the potentiometer using the ADC and displays it on the LCD in real-time.
+
+  - [Assembly File](ADC-LCD/main.asm)
+  > The assembly file contains the code to read an analog voltage from the potentiometer using the ADC and display it on the LCD.
+
+  - [LCD Functions File](ADC_LCD\LCDIS.inc)
+  > The LCD functions file contains the necessary functions to initialize and write data to the LCD.
+
+  - [HEX File](ADC-LCD/ADC-LCD.hex)
+  > The HEX file is generated from the assembly code and can be loaded into the microcontroller for execution.
 
 
+- **Demo**:
+<div align="center">
+    <img src="ADC_LCD\assets\ADC_LCD_demo.jpg" alt="ADC-LCD Circuit" width="500" />
+</div>
+
+
+- **Usage**:
+  1. Open the Proteus file in Proteus software.
+  2. Load the HEX file into the PIC16F877A microcontroller.
+  3. Run the simulation to see the analog voltage displayed on the LCD in real-time.
+
+---
 
 ## Contributing
 
