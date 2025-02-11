@@ -1,6 +1,6 @@
 # PIC16F877A Sample Circuits Repository
 
-Welcome to the **PIC16F877A Sample Circuits Repository**! This repository provides a collection of sample circuits and example codes written in **Assembly** to help developers and enthusiasts get started with the **PIC16F877A microcontroller**. if you are a beginner exploring microcontroller programming, this repository aims to be a valuable resource for you.
+Welcome to the **PIC16F877A Sample Circuits Repository**! This repository provides a collection of sample circuits and example codes written in **Assembly** to enthusiasts get started with the **PIC16F877A microcontroller**. if you are a beginner exploring microcontroller programming, this repository aims to be a valuable resource for you.
 
 ---
 
@@ -182,7 +182,7 @@ Before you begin, ensure you have the following:
   - [Assembly File](ADC-LCD/main.asm)
   > The assembly file contains the code to read an analog voltage from the potentiometer using the ADC and display it on the LCD.
 
-  - [LCD Functions File](ADC_LCD\LCDIS.inc)
+  - [LCD Functions File](ADC_LCD/LCDIS.inc)
   > The LCD functions file contains the necessary functions to initialize and write data to the LCD.
 
   - [HEX File](ADC-LCD/ADC-LCD.hex)
@@ -214,25 +214,25 @@ Before you begin, ensure you have the following:
   
 - **Circuit Diagram**:
 <div align="center">
-    <img src="simple_calc\assets\circuit.jpg" alt="Simple Calculator Circuit" width="500" />
+    <img src="simple_calc/assets/circuit.jpg" alt="Simple Calculator Circuit" width="500" />
 </div>
 
 - **Files**:
-  - [Proteus File](simple_calc\simple_calc.pdsprj)
+  - [Proteus File](simple_calc/simple_calc.pdsprj)
   > The Proteus file contains the PIC16F877A microcontroller interfaced with an LCD and a keypad. The program allows users to perform basic arithmetic operations on two numbers and display the result on the LCD.
 
-  - [Assembly File](simple_calc\simple_calc.asm)
+  - [Assembly File](simple_calc/simple_calc.asm)
   > The assembly file contains the code to create a simple calculator using the PIC16F877A microcontroller.
 
-  - [LCD Functions File](simple_calc\LCDIS_PORTD.inc)
+  - [LCD Functions File](simple_calc/LCDIS_PORTD.inc)
   > The LCD functions file contains the necessary functions to initialize and write data to the LCD.
 
-  - [HEX File](simple_calc\simple_calc.hex)
+  - [HEX File](simple_calc/simple_calc.hex)
   > The HEX file is generated from the assembly code and can be loaded into the microcontroller for execution.
 
 - **Demo**:
 <div align="center">
-    <img src="simple_calc\assets\demo.gif" alt="Simple Calculator Circuit" width="500" />
+    <img src="simple_calc/assets/demo.gif" alt="Simple Calculator Circuit" width="500" />
 
 </div>
 
