@@ -17,7 +17,8 @@ Welcome to the **PIC16F877A Sample Circuits Repository**! This repository provid
 * [ADC - LCD: Displaying Analog Voltage on LCD](#adc---lcd-displaying-analog-voltage-on-lcd)
   > This example demonstrates how to display an analog voltage on an LCD using the PIC16F877A microcontroller. The program reads an analog voltage from the ADC and displays it on the LCD in real-time.
 
-
+* [Simple Calculator: Basic Arithmetic Operations](#simple-calculator-basic-arithmetic-operations)
+  > This example demonstrates how to create a simple calculator using the PIC16F877A microcontroller. The program allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division on two numbers and display the result on an LCD.
 
 ---
 
@@ -33,27 +34,6 @@ For more technical details, refer to the official [PIC16F877A Datasheet](https:/
 
 ---
 
-## Repository Structure
-
-```plaintext
-📂 PIC16F877A-Sample-Circuits
-├── 📁 base
-│   ├── protus_file
-│   ├── 📁 assets
-│   │   ├── circuit.jpg
-│   │   └── other_files
-├── 📁 7_segment
-│   ├── protues_file
-│   ├── asm_file
-│   ├── hex_file
-│   └── 📁 assets
-│       ├── diagram.png
-│       ├── demo.mp4
-│       └── demo.gif
-└── README.md
-```
-
----
 
 
 ## Prerequisites
@@ -211,7 +191,7 @@ Before you begin, ensure you have the following:
 
 - **Demo**:
 <div align="center">
-    <img src="ADC_LCD\assets\ADC_LCD_demo.jpg" alt="ADC-LCD Circuit" width="500" />
+    <img src="ADC_LCD\assets\ADC_LCD_demo.gif" alt="ADC-LCD Circuit" width="500" />
 </div>
 
 
@@ -222,16 +202,51 @@ Before you begin, ensure you have the following:
 
 ---
 
-## Contributing
+## Simple Calculator: Basic Arithmetic Operations
+- **Description**: This example demonstrates how to create a simple calculator using the PIC16F877A microcontroller. The program allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division on two numbers and display on an LCD.
 
-Contributions are welcome! If you have a circuit or example code to share, please:
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature/new-circuit`.
-3. Commit your changes: `git commit -m 'Add new circuit example'`.
-4. Push to the branch: `git push origin feature/new-circuit`.
-5. Open a Pull Request.
+- **Components**:
+  - PIC16F877A Microcontroller
+  - LCD (16x2)
+  - Keypad (4x4)
+  - Resistors
+  - Power Supply (5V)
+  
+- **Circuit Diagram**:
+<div align="center">
+    <img src="simple_calc\assets\circuit.jpg" alt="Simple Calculator Circuit" width="500" />
+</div>
+
+- **Files**:
+  - [Proteus File](simple_calc\simple_calc.pdsprj)
+  > The Proteus file contains the PIC16F877A microcontroller interfaced with an LCD and a keypad. The program allows users to perform basic arithmetic operations on two numbers and display the result on the LCD.
+
+  - [Assembly File](simple_calc\simple_calc.asm)
+  > The assembly file contains the code to create a simple calculator using the PIC16F877A microcontroller.
+
+  - [LCD Functions File](simple_calc\LCDIS_PORTD.inc)
+  > The LCD functions file contains the necessary functions to initialize and write data to the LCD.
+
+  - [HEX File](simple_calc\simple_calc.hex)
+  > The HEX file is generated from the assembly code and can be loaded into the microcontroller for execution.
+
+- **Demo**:
+<div align="center">
+    <img src="simple_calc\assets\demo.gif" alt="Simple Calculator Circuit" width="500" />
+
+</div>
+
+- **Usage**:
+  1. Open the Proteus file in Proteus software.
+  2. Load the HEX file into the PIC16F877A microcontroller.
+  3. Run the simulation to use the simple calculator and perform basic arithmetic operations.
 
 ---
+
+
+
+
+
 
 ## License
 
